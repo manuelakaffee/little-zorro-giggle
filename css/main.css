@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 :root {
   --mainPink: #D54996;
@@ -13,15 +14,18 @@
 }
 
 body {
-  font-family: Roboto;
   background: var(--mainBlack);
   color: var(--mainWhite);
-  font-size: 1rem;
+  font-family: 'Roboto Slab', serif;
+  background: var(--mainBlack);
 }
 
 /* global styles */
 .btn{
+  font-size: 1rem;
+  font-family:'Open Sans', sans-serif;
   border-radius: 2.5rem;
+  /* padding: 0.4rem 2rem; */
 }
 .btn-pink {
   border-radius: 2.5rem;
@@ -62,16 +66,19 @@ body {
   background: var(--mainBlack);
 }
 .title-underline{
-  width: 80px;
+  width: 7rem;
   height: 0.1rem;
-  margin: 0.1rem auto;
-  background: var(--mainPurple);
+  margin: 1rem auto;
+  background: #662D91;
 }
 .bg-black{
   background: var(--mainBlack);
 }
 .bg-dark-gray{
   background: var(--mainDark);
+}
+.min-height{
+  min-height: 100vh;
 }
 
 /* nav links */
@@ -93,8 +100,7 @@ body {
 
 /* banner */
 .landing-image{
-  background: linear-gradient(var(--purpleTrans), var(--purpleTrans)),
-    url("../img/headerBcg.jpg");
+  background: url("../img/header_image.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -111,7 +117,18 @@ body {
   background:linear-gradient(to right, var(--pinkTrans), var(--purpleTrans));
 }
 .features-icons{
-  font-size: 1rem;
+  max-height:7.5rem;
+  weight: auto;
+}
+
+/* downloads section */
+.downloads{
+  background: url('../img/section_one_bcg.png');
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /* max-height: 70vh; */
 }
 
 /* footer section */
