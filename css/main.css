@@ -8,8 +8,8 @@
   --mainBlack: #1B212D;
   --mainDark: #283040;
   --mainLight: #8D99B2;
-  --purpleTrans: rgba(160, 65, 130,0.8);
-  --pinkTrans: rgba(213, 73, 150, 0.8);
+  --purpleTrans: rgba(160, 65, 130,1);
+  --pinkTrans: rgba(213, 73, 150, 1);
   --mainGrey: #8D99B2;
 }
 
@@ -81,6 +81,14 @@ body {
   min-height: 100vh;
 }
 
+/* forms */
+.form-control{
+  background-color: #222939!important;
+  border-radius: 2rem!important;
+  border: 1px solid #222939;
+}
+
+
 /* nav links */
 .navbar-toggler {
   outline: none !important;
@@ -124,7 +132,16 @@ body {
 /* downloads section */
 .downloads{
   background: url('../img/section_one_bcg.png');
-  background-position: right;
+  background-position: center;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* position: relative; */
+  /* max-height: 70vh; */
+}
+/* videos section */
+.videos{
+  background: url('../img/videos_section.png');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -153,4 +170,7 @@ footer a:hover{
 }
 .footer-icon:hover{
   color: var(--mainWhite);
+}
+.footer-links-height{
+  min-height: 7.5rem;
 }
