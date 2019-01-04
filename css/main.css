@@ -133,14 +133,14 @@ body {
 .downloads{
   background: url('../img/section_one_bcg.png');
   background-position: center;
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* position: relative; */
-  /* max-height: 70vh; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
+
 /* videos section */
 .videos{
-  background: url('../img/videos_section.png');
+  background-image: url('../img/videos_section.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -148,6 +148,23 @@ body {
   /* max-height: 70vh; */
 }
 
+/* live events section */
+.live-events{
+  background-image: url('../img/events_section.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* music section */
+.music{
+  background-image: url('../img/music_section.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
 /* footer section */
 footer{
   color: var(--mainGrey);
