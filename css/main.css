@@ -16,7 +16,6 @@ body {
   background: var(--mainBlack);
   color: var(--mainWhite);
   font-family: "Roboto Slab", serif;
-  background: var(--mainBlack);
 }
 
 /* global styles */
