@@ -2,28 +2,27 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 :root {
-  --mainPink: #D54996;
-  --mainPurple: #A04182;
+  --mainPink: #d54996;
+  --mainPurple: #a04182;
   --mainWhite: #fff;
-  --mainBlack: #1B212D;
+  --mainBlack: #1b212d;
   --mainDark: #283040;
-  --mainLight: #8D99B2;
-  --purpleTrans: rgba(160, 65, 130,1);
+  --mainLight: #8d99b2;
+  --purpleTrans: rgba(160, 65, 130, 1);
   --pinkTrans: rgba(213, 73, 150, 1);
-  --mainGrey: #8D99B2;
 }
 
 body {
   background: var(--mainBlack);
   color: var(--mainWhite);
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   background: var(--mainBlack);
 }
 
 /* global styles */
-.btn{
+.btn {
   font-size: 1rem;
-  font-family:'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-radius: 2.5rem;
   /* padding: 0.4rem 2rem; */
 }
@@ -65,37 +64,36 @@ body {
   color: var(--mainPink);
   background: var(--mainBlack);
 }
-.title-underline{
+.title-underline {
   width: 7rem;
   height: 0.1rem;
   margin: 1rem auto;
-  background: #662D91;
+  background: #662d91;
 }
-.bg-black{
+.bg-black {
   background: var(--mainBlack);
 }
-.bg-dark-gray{
+.bg-dark-gray {
   background: var(--mainDark);
 }
-.min-height{
+.min-height {
   min-height: 100vh;
 }
 
 /* forms */
-.form-control{
-  background-color: #222939!important;
-  border-radius: 2rem!important;
+.form-control {
+  background-color: #222939 !important;
+  border-radius: 2rem !important;
   border: 1px solid #222939;
 }
-
 
 /* nav links */
 .navbar-toggler {
   outline: none !important;
 }
 .toggler-icon {
-  font-size: 2.5rem;mainBlack
-  color: var(--mainPurple);
+  font-size: 2.5rem;
+  color: var(--mainWhite);
 }
 .nav-link {
   color: var(--mainTest);
@@ -107,7 +105,7 @@ body {
 }
 
 /* banner */
-.landing-image{
+.landing-image {
   background: url("../img/header_image.png");
   background-position: center;
   background-size: cover;
@@ -120,18 +118,18 @@ body {
 }
 
 /* fetures-short section */
-.features-short{
+.features-short {
   color: var(--mainWhite);
-  background:linear-gradient(to right, var(--pinkTrans), var(--purpleTrans));
+  background: linear-gradient(to right, var(--pinkTrans), var(--purpleTrans));
 }
-.features-icons{
-  max-height:7.5rem;
+.features-icons {
+  max-height: 7.5rem;
   weight: auto;
 }
 
 /* downloads section */
-.downloads{
-  background: url('../img/section_one_bcg.png');
+.downloads {
+  background: url("../img/section_one_bcg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -139,8 +137,8 @@ body {
 }
 
 /* videos section */
-.videos{
-  background-image: url('../img/videos_section.png');
+.videos {
+  background-image: url("../img/videos_section.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,8 +147,8 @@ body {
 }
 
 /* live events section */
-.live-events{
-  background-image: url('../img/events_section.png');
+.live-events {
+  background-image: url("../img/events_section.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -158,36 +156,149 @@ body {
 }
 
 /* music section */
-.music{
-  background-image: url('../img/music_section.png');
+.music {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("../img/music_section.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 /* footer section */
-footer{
+footer {
   color: var(--mainGrey);
+  font-family: "Open Sans", sans-serif;
 }
-footer a{
+footer a {
   color: var(--mainWhite);
 }
-footer a:hover{
+footer a:hover {
   color: var(--mainPink);
   text-decoration: none;
 }
-.footer-underline{
+.footer-underline {
   width: 100%;
   height: 0.1rem;
   background: var(--mainLight);
 }
-.footer-icon{
-  color: var(--mainGray);
+.footer-icon {
+  color: var(--mainLight);
   font-size: 2rem;
 }
-.footer-icon:hover{
+.footer-icon:hover {
   color: var(--mainWhite);
 }
-.footer-links-height{
+.footer-links-height {
   min-height: 7.5rem;
+}
+.footer-text {
+  font-size: 0.8rem;
+}
+
+.footer-img {
+}
+
+/* test me */
+.landing .landing-header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(15, 23, 10, 0.9);
+}
+.landing .landing-header ul {
+  list-style: none;
+}
+
+.landing .landing-header .active {
+  color: var(--mainLight);
+}
+.landing .landing-header .active svg{
+  fill: var(--mainLight);
+}
+
+@media only screen and (max-width: 991px) {
+  .landing .landing-header {
+    -webkit-transform: translate3D(-100%, 0, 0);
+    transform: translate3D(-100%, 0, 0);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .landing .landing-header.is--visible {
+    -webkit-transform: translate3D(0, 0, 0);
+    transform: translate3D(0, 0, 0);
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .landing .landing-header {
+    display: block;
+    height: auto;
+    position: absolute;
+    background: transparent;
+  }
+}
+
+/* navigation button toggle icon */
+button.nav_switch {
+  position: absolute;
+  z-index: 9;
+  top: 40px;
+  right: 40px;
+  width: 40px;
+  height: 25px;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+}
+
+button.nav_switch .nav_switch-icon {
+  display: block;
+  position: relative;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+button.nav_switch .nav_switch-icon:before,
+button.nav_switch .nav_switch-icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+button.nav_switch .nav_switch-icon:before {
+  bottom: -8px;
+}
+button.nav_switch .nav_switch-icon:after {
+  top: -8px;
+}
+button.nav_switch.nav-switch--close {
+  position: fixed;
+}
+button.nav_switch.nav-switch--close .nav_switch-icon {
+  background-color: transparent;
+}
+button.nav_switch.nav-switch--close .nav_switch-icon:before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: 0px;
+}
+button.nav_switch.nav-switch--close .nav_switch-icon:after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0;
 }
