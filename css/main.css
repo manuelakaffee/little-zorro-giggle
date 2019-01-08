@@ -96,14 +96,34 @@ body {
   color: var(--mainWhite);
 }
 .nav-link {
-  color: var(--mainTest);
+  color: var(--mainWhite);
+  transition: all 1s ease-in-out;
+  font-size: 1rem;
+}
+.nav-link svg {
+  color: var(--mainWhite);
   transition: all 1s ease-in-out;
   font-size: 1rem;
 }
 .nav-link:hover {
   color: var(--mainPink);
 }
+.nav-link:hover svg {
+  fill: var(--mainPink);
+}
 
+ .active .nav-link{
+  color: var(--mainLight);
+}
+.landing .landing-header .active svg{
+  fill: var(--mainLight);
+}
+.active .nav-link:hover {
+  color: var(--mainPink);
+}
+.active .nav-link:hover svg {
+  fill: var(--mainPink);
+}
 /* banner */
 .landing-image {
   background: url("../img/header_image.png");
@@ -216,12 +236,7 @@ footer a:hover {
   list-style: none;
 }
 
-.landing .landing-header .active {
-  color: var(--mainLight);
-}
-.landing .landing-header .active svg{
-  fill: var(--mainLight);
-}
+
 
 @media only screen and (max-width: 991px) {
   .landing .landing-header {
