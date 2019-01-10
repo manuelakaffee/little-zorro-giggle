@@ -10,131 +10,130 @@
   <link rel="stylesheet" href="css/main.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="css/all.css">
+  <!-- <link rel="stylesheet" href="css/jojo.css"> -->
 
   <title>Zorrotunes</title>
 </head>
 
 
-<body>
-  <header id="header">
-  </header>
-  <!-- end of header -->
+ <body class="login">
 
-  <section class="login">
-    <div class="container-fluid landing-image min-height">
+  <section id="login-section" class="login-image py-3">
+    <div class="container-fluid">
       <div class="row">
-        <div class="form col-10 col-md-6 col-lg-4 mx-auto bg-black my-5 p-4">
-          <div class="form__content">
+        <div class="col-10 col-md-7 col-lg-4 mx-auto bg-black px-4 py-2 ">
             <div class="row">
-              <div class="col-6 mx-auto">
-                  <img class="logo" src="./img/logo_monocromic.png" alt="Zoro Tunes Main">
-              </div>
+              <img class="logo  mx-auto my-3" src="./img/zorroTunes_logo.png" alt="Zoro Tunes Main">
             </div>
-            <div class="row my-4">
-              <div class="col-6">
-                  <a href="#" class="text-capitalize">login</a>
-              </div>
-              <div class="col-6 ">
-                  <a href="#" class="text-capitalize">register</a>
-              </div>
-            </div>
-            <div class="row  my-3">
-              <button class="btn btn-gray w-75 mx-auto  py-3 text-uppercase"><i class="fab fa-facebook"> register <div class="d-none d-md-block">with facebook</div></i></button>
-            </div>
-            <div class="row my-3">
-              <button class="btn btn-gray w-75 mx-auto py-3 text-uppercase"><i class="fab fa-google-plus"> register with google</i></button>
-            </div>
-            <div class="row my-4">
-              <div class="mx-auto text-uppercase">or use your email</div>
-            </div>
-
-            <form class="text-capitalize form__content">
-              <div class="row">
-                <div class="col-10 mx-auto">
-                  <div class="form-group">
-                    <label for="first-name">first name</label>
-                    <input type="text" class="form-control" id="first-name" placeholder="Ivan">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-10 mx-auto">
-                  <div class="form-group">
-                    <label for="last-name">last name</label>
-                    <input type="text" class="form-control" id="last-name" placeholder="Horvat">
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-10 col-md-5">
-                  <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <select class="form-control text-capitalize" id="gender">
-                      <option>male</option>
-                      <option>female</option>
-                      <option>3</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-10 col-md-5">
-                  <div class="form-group">
-                    <label for="birthday">birth date</label>
-                    <select class="form-control text-capitalize" id="birthday">
-                      <option>dl</option>
-                      <option>fds</option>
-                      <option>dsad</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-10 mx-auto">
-                  <div class="form-group">
-                    <label for="country">country</label>
-                    <select class="form-control text-capitalize" id="country">
-                      <option>Croatia</option>
-                      <option>England</option>
-                    </select>
-                  </div>
-                </div>
-                </div>
-                <div class="row">
-                  <div class="col-10 mx-auto">
-                    <div class="form-group">
-                      <label for="email">email</label>
-                      <input type="email" class="form-control" id="last-name" placeholder="ivan.horvat@gmail.com">
+              <div class="tabs tabs--main-large">
+            <ul class="tabs-navigation p-0 d-flex mb-4">
+              <li class="w-50"><a href="#login" data-content="login" title="Login" class="text-capitalize d-block w-100">login</a></li>
+              <li class="w-50"><a href="#register" data-content="register" title="Register" class="text-capitalize d-block w-100 selected">register</a></li>
+            </ul>
+            <div class="tabs-content p-0 my-2 mx-1" style="height: 1040px;">
+              <ul class="tabs-slider m-0 p-0 d-blox" style="height: 1040px; transform: translateX(-100%);">
+                <li data-content="login">
+                  <button class="btn btn-block btn-outline-gray text-uppercase py-3 mb-3"><i class="fab fa-facebook-f"> <span> login with facebook </span></i></button>
+                  <button class="btn btn-block btn-outline-gray text-uppercase py-3"><i class="fab fa-google-plus-g"><span> login with google</span></i></button>
+                  <p class="text-center text-uppercase py-3">or use your email</p>
+                  <!-- login form -->
+                  <form class="form text-capitalize">
+                    <div class="form-row">
+                      <div class="form-group col mx-auto">
+                        <label for="login-email">email</label>
+                        <input type="email" class="form-control" id="login-email" placeholder="ivan.horvat@gmail.com">
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-10 mx-auto">
-                    <div class="form-group">
-                      <label for="password">password</label>
-                      <input type="password" class="form-control" id="password" placeholder="***********">
+                    <div class="form-row">
+                      <div class="form-group col-11 mx-auto">
+                        <label for="login-password">password</label>
+                        <input type="password" class="form-control" id="login-password" placeholder="***********">
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-10 mx-auto">
-                    <div class="form-group">
-                      <label for="password-confirmation">repeat password</label>
-                      <input type="password" class="form-control" id="password-confirmation" placeholder="">
+                    <button class="btn btn-block btn-pink text-uppercase w-50 mx-auto py-3" type="submit">login</button>
+                    <a href="#forgot-password" class="mx-auto w-100 text-capitalize py-3">i forgot my password!</a>
+                    </form>
+                    <!-- end of login form -->
+                </li>
+                <li data-content="register" class="selected">
+                  <button class="btn btn-block btn-outline-gray text-uppercase py-3 mb-3"><i class="fab fa-facebook-f"> <span> register with facebook </span></i></button>
+                  <button class="btn btn-block btn-outline-gray text-uppercase py-3"><i class="fab fa-google-plus-g"><span> register with google</span></i></button>
+                  <p class="text-center text-uppercase py-3">or use your email</p>
+                  <!-- register form -->
+                  <form class="form text-capitalize form__content">
+                    <div class="form-row">
+                      <div class="form-group col mx-auto">
+                        <label for="first-name">first name</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="Ivan">
+                      </div>
                     </div>
-                  </div>
-                </div>
-              <div class="row my-2">
-                <button class="btn btn-pink text-uppercase w-50 mx-auto py-3" type="submit">register</button>
-              </div>
-              <div class="row my-4">
-                <div class="mx-auto text-capitalize">i accept terms of use</div>
-              </div>
-            </form>
+                    <div class="form-row">
+                        <div class="form-group col mx-auto">
+                          <label for="last-name">last name</label>
+                          <input type="text" class="form-control" id="last-name" placeholder="Horvat">
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                      <div class="form-group col col-md-6 ">
+                        <label for="gender">Gender</label>
+                        <select class="form-control text-capitalize" id="gender">
+                          <option>male</option>
+                          <option>female</option>
+                          <option>other</option>
+                        </select>
+                      </div>
+                      <div class="form-group col col-md-6">
+                        <label for="birthday">birth date</label>
+                        <select class="form-control text-capitalize" id="birthday">
+                          <option>dl</option>
+                          <option>fds</option>
+                          <option>dsad</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                      <div class="form-group col mx-auto">
+                        <label for="country">country</label>
+                        <select class="form-control text-capitalize" id="country">
+                          <option>Croatia</option>
+                          <option>England</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col mx-auto">
+                        <label for="email">email</label>
+                        <input type="email" class="form-control" id="email" placeholder="ivan.horvat@gmail.com">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col mx-auto">
+                        <label for="password">password</label>
+                        <input type="password" class="form-control" id="password" placeholder="***********">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col ">
+                        <label for="password-confirmation">repeat password</label>
+                        <input type="password" class="form-control" id="password-confirmation" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row my-2">
+                      <button class="btn btn-pink text-uppercase w-50 mx-auto py-3" type="submit">register</button>
+                    </div>
+                    <div class="row my-3">
+                      <div class="mx-auto text-capitalize">i accept terms of use</div>
+                    </div>
+                  </form>
+                  <!-- end of register form -->
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-</body>
 
   <!-- jquery -->
   <script src="js/jquery-3.3.1.min.js"></script>
