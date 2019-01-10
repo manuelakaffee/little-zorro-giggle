@@ -1,6 +1,4 @@
-// document.getElementById("nav_switch-id").addEventListener("click", function(el) {
-//   toggleNavigation();
-// });
+// document.getElementById("nav_switch-id").
 
 function toggleNavigation() {
   console.log("toggle navigation");
@@ -13,12 +11,20 @@ function toggleNavigation() {
 
 $(document).ready(function() {
   console.log("ready!");
+  var navSwitch = $("#nav_switch-id");
+  console.log(navSwitch)
+  if (navSwitch.length > 0) {
+    navSwitch[0].addEventListener("click", function(el) {
+      toggleNavigation();
+    });
+  }
+
   testirajMe();
 });
 
 function testirajMe() {
   console.log("hohoho");
-  var  container = $(".tabs");
+  var container = $(".tabs");
 
   console.log("sto su sad tabs:", container);
   container.each(function() {
