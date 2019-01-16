@@ -4,36 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Zorrotunes</title>
+
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- main css -->
-  <link rel="stylesheet" href="css/main.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="css/all.css">
-  <!-- <link rel="stylesheet" href="css/jojo.css"> -->
-
-  <title>Zorrotunes</title>
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 
- <body class="login login-image">
-
-  <section id="login-section" class="py-3">
+ <body class="login bg-crowd">
+  <section class="m-2 m-sm-5 py-3">
     <div class="container">
+      <div class="row m-3">
+        <div class="col text-center"><a href="/"> go back</a></div>
+      </div>
       <div class="row">
-        <div class="col-10 col-md-7 col-lg-4 mx-auto bg-black px-4 py-2 ">
+        <div class="col-11 col-md-7 col-lg-5 mx-auto bg-black px-4 py-2 ">
             <div class="row">
-              <div class="col-8 mx-auto">
-                  <img class="img-fluid my-3" src="./img/zorroTunes_logo.png" alt="Zoro Tunes Main">
+              <div class="col-8 mx-auto my-4">
+                  <img class="img-fluid" src="./img/zorroTunes_horizontal_logo.svg" alt="Zoro Tunes Main">
               </div>
             </div>
             <div class="tabs tabs--main-large">
               <ul class="tabs-navigation p-0 d-flex mb-4">
                 <li class="w-50"><a href="#login" data-content="login" title="Login" class="text-capitalize d-block w-100">login</a></li>
-                <li class="w-50"><a href="#register" data-content="register" title="Register" class="text-capitalize d-block w-100 selected">register</a></li>
+                <li class="w-50"><a href="#register" data-content="register" title="Register" class="text-capitalize d-block w-100">register</a></li>
               </ul>
-              <div class="tabs-content p-0 my-2 mx-1" style="height: 1040px;">
-                <ul class="tabs-slider m-0 p-0 d-blox" style="height: 1040px; transform: translateX(-100%);">
+              <div class="tabs-content p-0 my-2 mx-1">
+                <ul class="tabs-slider m-0 p-0 d-blox" >
                   <li data-content="login">
                     <button class="btn btn-block btn-outline-gray text-uppercase py-3 mb-3"><i class="fab fa-facebook-f"> <span> login with facebook </span></i></button>
                     <button class="btn btn-block btn-outline-gray text-uppercase py-3"><i class="fab fa-google-plus-g"><span> login with google</span></i></button>
@@ -53,11 +54,11 @@
                         </div>
                       </div>
                       <button class="btn btn-block btn-pink text-uppercase w-50 mx-auto py-3" type="submit">login</button>
-                      <a href="#forgot-password" class="mx-auto w-100 text-capitalize py-3">i forgot my password!</a>
+                      <a href="/forgot-password.html" class="mx-auto text-center text-capitalize py-3">i forgot my password!</a>
                       </form>
                       <!-- end of login form -->
                   </li>
-                  <li data-content="register" class="selected">
+                  <li data-content="register">
                     <button class="btn btn-block btn-outline-gray text-uppercase py-3 mb-3"><i class="fab fa-facebook-f"> <span> register with facebook </span></i></button>
                     <button class="btn btn-block btn-outline-gray text-uppercase py-3"><i class="fab fa-google-plus-g"><span> register with google</span></i></button>
                     <p class="text-center text-uppercase py-3">or use your email</p>
@@ -92,7 +93,7 @@
                       <div class="form-row justify-content-center">
                         <div class="form-group col mx-auto">
                           <label for="country">country</label>
-                          <select class="selectPicker text-capitalize" id="country">
+                          <select class="selectPicker form-control text-capitalize" id="country">
                             <option>Croatia</option>
                             <option>England</option>
                           </select>
