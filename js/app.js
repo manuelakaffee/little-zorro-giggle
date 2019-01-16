@@ -1,13 +1,4 @@
-// document.getElementById("nav_switch-id").
 
-function toggleNavigation() {
-  console.log("toggle navigation");
-  var siteLandingNav = $(".landing-header--menu-control");
-  var navSwitch = $(".nav_switch");
-
-  siteLandingNav.toggleClass("is--visible"),
-    navSwitch.toggleClass("nav-switch--close");
-}
 
 $(document).ready(function() {
   console.log("ready!");
@@ -21,6 +12,16 @@ $(document).ready(function() {
 
   testirajMe();
 });
+
+
+function toggleNavigation() {
+  console.log("toggle navigation");
+  var siteLandingNav = $(".landing-header");
+  var navSwitch = $(".nav_switch");
+
+  siteLandingNav.toggleClass("is--visible"),
+    navSwitch.toggleClass("nav-switch--close");
+}
 
 function testirajMe() {
   console.log("hohoho");
