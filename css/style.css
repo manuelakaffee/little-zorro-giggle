@@ -572,7 +572,7 @@ footer a:hover {
   position: relative;
   margin: 0;
   padding: 0.75rem 0;
-  border-top: 1px solid var(--mainLight);
+  border-top: 1px solid var(--mainDark);
   transition: all 0.5s ease-in-out;
   font-size: 0.8rem;
   text-transform: uppercase;
