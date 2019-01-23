@@ -1,0 +1,60 @@
+/*  sidebar and main setup */
+
+.site-sidebar {
+  width: 20rem;
+  position: absolute;
+  right: 20rem;
+  left: 0;
+}
+
+.site-main {
+  width: calc(100% - 20rem);
+  position: absolute;
+  left: 20rem;
+  /* border: 1px solid red; */
+}
+
+/* @media only screen and (max-width: 768px) { */
+  /* .site .site-sidebar { */
+    /* -webkit-transform: translate3D(-100%, 0, 0);
+    transform: translate3D(-100%, 0, 0);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; */
+  /* } */
+
+  /* .site .site-sidebar { */
+    /* z-index: 2; */
+    /* top: inherit; */
+    /* left: 0; */
+    /* order:2; */
+    /* width: 100%; */
+    /* background: rgba(15, 23, 10, 0.9); */
+  /* } */
+
+  /* .site .site-sidebar.is--visible {
+    -webkit-transform: translate3D(0, 0, 0);
+    transform: translate3D(0, 0, 0);
+  } */
+/* } */
+
+@media only screen and (max-width: 768px) {
+   .site-sidebar {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    left: none;
+    top: inherit;
+    position: relative;
+    order:2;
+  }
+
+  .site-main {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    left: inherit;
+    top: inherit;
+    order:1;
+    position: relative;
+  }
+}
